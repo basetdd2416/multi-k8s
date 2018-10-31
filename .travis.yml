@@ -20,3 +20,7 @@ after_success:
   - docker push bluesaluman/multi-nginx
   - docker push bluesaluman/multi-server
   - docker push bluesaluman/multi-worker
+
+deploy:
+  provider: elasticbeanstalk
+  region: ap-southeast-1
