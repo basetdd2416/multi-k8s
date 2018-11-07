@@ -18,7 +18,7 @@ before_install:
   - docker build -t bluesaluman/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run bluesaluman/react-test -- --coverage
+  - docker run bluesaluman/react-test npm test -- --coverage
 
 deploy:
   provider: script
